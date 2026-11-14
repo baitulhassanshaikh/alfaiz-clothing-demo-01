@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="apple-touch-icon" href="favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AL NOOR CLOTHING | Premium Fashion for Men &amp; Women</title>
+        <meta name="description" content="AL NOOR CLOTHING: modern men's, women's, casual and traditional wear. Shop new arrivals, best sellers and collections priced in PKR.">
+        <meta name="theme-color" content="#F2EBDF">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <!-- Announcement marquee -->
+        <div class="ticker" role="region" aria-label="Store announcements">
+            <div class="ticker-track" aria-hidden="false">
+                <span>New season is here
+                    <i>✦</i> Free delivery over PKR 10,000
+                    <i>✦</i> Handcrafted in small batches
+                    <i>✦</i> Easy 14-day exchanges
+                    <i>✦</i>
+                </span>
+                <span aria-hidden="true">New season is here
+                    <i>✦</i> Free delivery over PKR 10,000
+                    <i>✦</i> Handcrafted in small batches
+                    <i>✦</i> Easy 14-day exchanges
+                    <i>✦</i>
+                </span>
+            </div>
+        </div>
+        <!-- Header -->
+        <header class="site-header" id="siteHeader">
+            <div class="header-inner">
+                <button
+                    type="button"
+                    class="icon-btn menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open menu"
+                    aria-controls="mobileMenu"
+                    aria-expanded="false"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 8h16M4 16h11"/>
+                    </svg>
+                </button>
+                <a class="brand" href="#top" aria-label="AL NOOR CLOTHING, back to top">
+                    <span class="brand-name">AL NOOR</span>
+                    <span class="brand-sub">Clothing</span>
+                </a>
+                <nav class="main-nav" aria-label="Main">
+                    <a href="#top">Home</a>
+                    <a href="#new-arrivals">New Arrivals</a>
+                    <a href="#new-arrivals" data-cat-link="men">Men</a>
+                    <a href="#new-arrivals" data-cat-link="women">Women</a>
+                    <a href="#collections">Collections</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <button
+                        type="button"
+                        class="icon-btn"
+                        id="searchToggle"
+                        aria-label="Search"
+                        aria-expanded="false"
+                        aria-controls="searchPanel"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="6.5"/>
+                            <path d="m20 20-3.8-3.8"/>
+                        </svg>
+                    </button>
+                    <button
+                        type="button"
+                        class="icon-btn desktop-only"
+                        id="accountBtn"
+                        aria-label="Account"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="8.5" r="3.8"/>
+                            <path d="M5 20c1.2-3.6 4-5.5 7-5.5s5.8 1.9 7 5.5"/>
+                        </svg>
+                    </button>
+                    <button
+                        type="button"
+                        class="icon-btn desktop-only"
+                        id="wishlistBtn"
+                        aria-label="Wishlist"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 20s-7-4.4-8.9-8.6C1.8 8.4 3.6 5 7 5c2 0 3.5 1.1 5 3 1.5-1.9 3-3 5-3 3.4 0 5.2 3.4 3.9 6.4C19 15.6 12 20 12 20z"/>
+                        </svg>
+                        <span class="badge wish-count" hidden>0</span>
+                    </button>
+                    <button
+                        type="button"
+                        class="icon-btn"
+                        id="bagBtn"
+                        aria-label="Shopping bag"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 8h14l-1 12H6L5 8z"/>
+                            <path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+                        </svg>
+                        <span class="badge bag-count" hidden>0</span>
+                    </button>
+                </div>
+            </div>
+            <div class="search-panel" id="searchPanel" hidden>
+                <form id="searchForm" role="search" novalidate>
+                    <label for="searchInput" class="sr-only">Search products</label>
+                    <input
+                        id="searchInput"
+                        type="search"
+                        placeholder="Search dresses, kurtas, blazers…"
+                        autocomplete="off"
+                    >
+                </form>
+            </div>
+        </header>
+        <main id="main">
+            <!-- Hero slider -->
+            <section
+                class="hero"
+                id="top"
+                aria-roledescription="carousel"
+                aria-label="Featured collections"
+            >
+                <div class="hero-slides">
+                    <article class="hero-slide is-active" style="--bg:#E9B9A2;--ink-soft:#7A2E17">
+                        <div class="hero-text">
+                            <p class="kicker">Spring / Summer 2026</p>
+                            <h1>Style that
+                                <em>speaks</em> for you.
+                            </h1>
+                            <p class="lead">Considered silhouettes, breathable fabrics and finishing details, made to be worn every single day.</p>
+                            <div class="hero-cta">
+                                <a class="btn btn-ink" href="#new-arrivals">Shop collection
+                                    <span aria-hidden="true">→</span>
+                                </a>
+                                <a class="btn btn-line" href="#collections">Discover more</a>
+                            </div>
+                        </div>
+                        <div
+                            class="hero-art"
+                            data-art="dress"
+                            data-fill="#C2552D"
+                            data-accent="#F2EBDF"
+                            data-bg-art="#F6D3C2"
+                        ></div>
+                    </article>
+                    <article class="hero-slide" style="--bg:#C9D1BC;--ink-soft:#2F3A24" aria-hidden="true">
+                        <div class="hero-text">
+                            <p class="kicker">Traditional Edit</p>
+                            <h1>Heritage,
+                                <em>tailored</em> anew.
+                            </h1>
+                            <p class="lead">Gold-thread embroidery and fine cottons for Eid, weddings and every occasion that deserves a little more.</p>
+                            <div class="hero-cta">
+                                <a class="btn btn-ink" href="#new-arrivals" data-cat-link="traditional">Shop traditional
+                                    <span aria-hidden="true">→</span>
+                                </a>
+                                <a class="btn btn-line" href="#best-sellers">Best sellers</a>
+                            </div>
+                        </div>
+                        <div
+                            class="hero-art"
+                            data-art="kurta"
+                            data-fill="#2F3A24"
+                            data-accent="#C5A46D"
+                            data-bg-art="#E1E7D6"
+                        ></div>
+                    </article>
+                    <article class="hero-slide" style="--bg:#2A1E19;--ink-soft:#E9B9A2" aria-hidden="true">
+                        <div class="hero-text">
+                            <p class="kicker">Casual Edit</p>
+                            <h1>Effortless
+                                <em>everyday</em> luxury.
+                            </h1>
+                            <p class="lead">Linen, knit and organic cotton essentials that move from morning errands to evening plans.</p>
+                            <div class="hero-cta">
+                                <a class="btn btn-cream" href="#new-arrivals" data-cat-link="casual">Shop casual
+                                    <span aria-hidden="true">→</span>
+                                </a>
+                                <a class="btn btn-line btn-line-light" href="#collections">Discover more</a>
+                            </div>
+                        </div>
+                        <div
+                            class="hero-art"
+                            data-art="top"
+                            data-fill="#D9C3A5"
+                            data-accent="#2A1E19"
+                            data-bg-art="#4A3A32"
+                        ></div>
+                    </article>
+                </div>
+                <div class="hero-badge" aria-hidden="true">
+                    <svg viewBox="0 0 120 120">
+                        <defs>
+                            <path id="badgePath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/>
+                        </defs>
+                        <text>
+                            <textPath href="#badgePath">NEW SEASON · AL NOOR · NEW SEASON · AL NOOR ·</textPath>
+                        </text>
+                        <circle
+                            cx="60"
+                            cy="60"
+                            r="14"
+                            class="badge-dot"
+                        />
+                    </svg>
+                </div>
+                <div class="hero-controls">
+                    <button
+                        type="button"
+                        class="hero-arrow"
+                        id="heroPrev"
+                        aria-label="Previous slide"
+                    >←</button>
+                    <div class="hero-dots" role="group" aria-label="Choose slide">
+                        <button
+                            type="button"
+                            data-go="0"
+                            aria-label="Slide 1"
+                            aria-selected="true"
+                            class="is-active"
+                        >
+                            <span>01</span>
+                        </button>
+                        <button
+                            type="button"
+                            data-go="1"
+                            aria-label="Slide 2"
+                            aria-selected="false"
+                        >
+                            <span>02</span>
+                        </button>
+                        <button
+                            type="button"
+                            data-go="2"
+                            aria-label="Slide 3"
+                            aria-selected="false"
+                        >
+                            <span>03</span>
+                        </button>
+                    </div>
+                    <button
+                        type="button"
+                        class="hero-arrow"
+                        id="heroNext"
+                        aria-label="Next slide"
+                    >→</button>
+                </div>
+                <div class="hero-progress" aria-hidden="true">
+                    <span id="heroBar"></span>
+                </div>
+            </section>
+            <!-- Brand strip -->
+            <div class="strip" aria-hidden="true">
+                <div class="strip-track">
+                    <span>Men</span>
+                    <i>●</i>
+                    <span>Women</span>
+                    <i>●</i>
+                    <span>Casual</span>
+                    <i>●</i>
+                    <span>Traditional</span>
+                    <i>●</i>
+                    <span>Men</span>
+                    <i>●</i>
+                    <span>Women</span>
+                    <i>●</i>
+                    <span>Casual</span>
+                    <i>●</i>
+                    <span>Traditional</span>
+                    <i>●</i>
+                </div>
+            </div>
+            <!-- Categories (bento) -->
+            <section class="section" id="categories">
+                <div class="container">
+                    <header class="section-head reveal">
+                        <p class="kicker">Shop by category</p>
+                        <h2>Find your
+                            <em>edit</em>
+                        </h2>
+                    </header>
+                    <div class="bento">
+                        <article class="tile tile-big reveal" data-cat="men" style="--bg:#D9C3A5">
+                            <div
+                                class="tile-art"
+                                data-art="blazer"
+                                data-fill="#2A1E19"
+                                data-accent="#C5A46D"
+                            ></div>
+                            <div class="tile-info">
+                                <h3>Men's Fashion</h3>
+                                <button type="button" class="pill" data-cat-link="men">Explore
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                        </article>
+                        <article class="tile reveal" data-cat="women" style="--bg:#EBCFC0">
+                            <div
+                                class="tile-art"
+                                data-art="dress"
+                                data-fill="#C2552D"
+                                data-accent="#F2EBDF"
+                            ></div>
+                            <div class="tile-info">
+                                <h3>Women's Fashion</h3>
+                                <button type="button" class="pill" data-cat-link="women">Explore
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                        </article>
+                        <article class="tile reveal" data-cat="casual" style="--bg:#C9D1BC">
+                            <div
+                                class="tile-art"
+                                data-art="hoodie"
+                                data-fill="#3E4A2F"
+                                data-accent="#F2EBDF"
+                            ></div>
+                            <div class="tile-info">
+                                <h3>Casual Wear</h3>
+                                <button type="button" class="pill" data-cat-link="casual">Explore
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                        </article>
+                        <article class="tile reveal" data-cat="traditional" style="--bg:#E9DFCF">
+                            <div
+                                class="tile-art"
+                                data-art="kurta"
+                                data-fill="#2F3A24"
+                                data-accent="#C5A46D"
+                            ></div>
+                            <div class="tile-info">
+                                <h3>Traditional Wear</h3>
+                                <button type="button" class="pill" data-cat-link="traditional">Explore
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- New arrivals -->
+            <section class="section arrivals" id="new-arrivals">
+                <div class="container">
+                    <header class="section-head split reveal">
+                        <div>
+                            <p class="kicker">Just in</p>
+                            <h2>New
+                                <em>arrivals</em>
+                            </h2>
+                        </div>
+                        <p class="muted">Fresh pieces every fortnight. Filter by category, search, or sort by price.</p>
+                    </header>
+                    <div class="toolbar reveal">
+                        <div class="segmented" role="group" aria-label="Filter by category">
+                            <button
+                                type="button"
+                                class="seg is-active"
+                                data-filter="all"
+                                aria-pressed="true"
+                            >All</button>
+                            <button
+                                type="button"
+                                class="seg"
+                                data-filter="men"
+                                aria-pressed="false"
+                            >Men</button>
+                            <button
+                                type="button"
+                                class="seg"
+                                data-filter="women"
+                                aria-pressed="false"
+                            >Women</button>
+                            <button
+                                type="button"
+                                class="seg"
+                                data-filter="casual"
+                                aria-pressed="false"
+                            >Casual</button>
+                            <button
+                                type="button"
+                                class="seg"
+                                data-filter="traditional"
+                                aria-pressed="false"
+                            >Traditional</button>
+                        </div>
+                        <label class="sort">
+                            <span>Sort</span>
+                            <select id="sortSelect">
+                                <option value="featured">Featured</option>
+                                <option value="price-asc">Price: low to high</option>
+                                <option value="price-desc">Price: high to low</option>
+                                <option value="name">Name A–Z</option>
+                            </select>
+                        </label>
+                    </div>
+                    <p class="result-count" id="resultCount" aria-live="polite"></p>
+                    <div class="product-grid" id="newGrid"></div>
+                    <div class="empty-state" id="emptyState" hidden>
+                        <p>No pieces match that yet.</p>
+                        <button type="button" class="pill" data-filter="all">Clear filters</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Best sellers (scroll-snap carousel) -->
+            <section class="section best" id="best-sellers">
+                <div class="container">
+                    <header class="section-head split reveal">
+                        <div>
+                            <p class="kicker">Most loved</p>
+                            <h2>Best
+                                <em>sellers</em>
+                            </h2>
+                        </div>
+                        <div class="carousel-nav">
+                            <button
+                                type="button"
+                                class="hero-arrow dark"
+                                id="bestPrev"
+                                aria-label="Scroll left"
+                            >←</button>
+                            <button
+                                type="button"
+                                class="hero-arrow dark"
+                                id="bestNext"
+                                aria-label="Scroll right"
+                            >→</button>
+                        </div>
+                    </header>
+                </div>
+                <div
+                    class="carousel"
+                    id="bestTrack"
+                    tabindex="0"
+                    aria-label="Best sellers"
+                ></div>
+            </section>
+            <!-- Promo -->
+            <section class="promo" aria-labelledby="promoTitle">
+                <div class="promo-inner reveal">
+                    <p class="kicker">The festive edit</p>
+                    <h2 id="promoTitle">Up to
+                        <em>30% off</em> selected pieces
+                    </h2>
+                    <p class="lead">Limited-run embroidered kurtas and lawn suits, reserved for a short season.</p>
+                    <a class="btn btn-cream" href="#new-arrivals" data-cat-link="all">Shop now
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+                <div
+                    class="promo-art"
+                    aria-hidden="true"
+                    data-art="kurta"
+                    data-fill="#C5A46D"
+                    data-accent="#2A1E19"
+                ></div>
+            </section>
+            <!-- Collections -->
+            <section class="section" id="collections">
+                <div class="container">
+                    <header class="section-head reveal">
+                        <p class="kicker">Curated collections</p>
+                        <h2>Shop by
+                            <em>collection</em>
+                        </h2>
+                    </header>
+                    <div class="coll-grid">
+                        <article class="coll reveal" style="--bg:#C9D1BC">
+                            <div
+                                class="coll-art"
+                                data-art="top"
+                                data-fill="#F2EBDF"
+                                data-accent="#3E4A2F"
+                            ></div>
+                            <div class="coll-info">
+                                <p class="kicker">Summer linen</p>
+                                <h3>Breathe easy</h3>
+                                <button type="button" class="pill" data-cat-link="casual">View collection
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                        </article>
+                        <article class="coll reveal" style="--bg:#2A1E19;color:#F2EBDF">
+                            <div
+                                class="coll-art"
+                                data-art="kurta"
+                                data-fill="#C5A46D"
+                                data-accent="#2A1E19"
+                            ></div>
+                            <div class="coll-info">
+                                <p class="kicker kicker-light">Eid &amp; weddings</p>
+                                <h3>Gold thread</h3>
+                                <button type="button" class="pill pill-light" data-cat-link="traditional">View collection
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                        </article>
+                        <article class="coll reveal" style="--bg:#EBCFC0">
+                            <div
+                                class="coll-art"
+                                data-art="trouser"
+                                data-fill="#A8967A"
+                                data-accent="#2A1E19"
+                            ></div>
+                            <div class="coll-info">
+                                <p class="kicker">Everyday essentials</p>
+                                <h3>The wardrobe core</h3>
+                                <button type="button" class="pill" data-cat-link="all">View collection
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Reviews -->
+            <section class="section reviews" aria-labelledby="reviewsTitle">
+                <div class="container">
+                    <header class="section-head reveal">
+                        <p class="kicker">Customer words</p>
+                        <h2 id="reviewsTitle">What people
+                            <em>say</em>
+                        </h2>
+                        <p class="note">Sample reviews for demonstration only. These are not verified customer feedback.</p>
+                    </header>
+                    <div class="review-grid">
+                        <figure class="review reveal">
+                            <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+                            <blockquote>The linen overshirt fits beautifully and the fabric feels far more premium than I expected.</blockquote>
+                            <figcaption>
+                                <strong>Sample: Ayesha K.</strong>
+                                <span class="tag-demo">Sample</span>
+                            </figcaption>
+                        </figure>
+                        <figure class="review reveal">
+                            <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+                            <blockquote>Ordered the embroidered kurta for Eid. The gold detailing is subtle and elegant.</blockquote>
+                            <figcaption>
+                                <strong>Sample: Bilal H.</strong>
+                                <span class="tag-demo">Sample</span>
+                            </figcaption>
+                        </figure>
+                        <figure class="review reveal">
+                            <p class="stars" aria-label="4 out of 5 stars">★★★★☆</p>
+                            <blockquote>Soft, breathable and easy to style. I would love a few more colour options next season.</blockquote>
+                            <figcaption>
+                                <strong>Sample: Mariam S.</strong>
+                                <span class="tag-demo">Sample</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- Newsletter -->
+            <section class="newsletter" aria-labelledby="nlTitle">
+                <div class="container newsletter-inner reveal">
+                    <p class="kicker kicker-light">Join the list</p>
+                    <h2 id="nlTitle">Be first to
+                        <em>know.</em>
+                    </h2>
+                    <p class="lead">Early access to new arrivals and private offers, once a fortnight.</p>
+                    <form class="nl-form js-newsletter" novalidate>
+                        <label for="nlEmail" class="sr-only">Email address</label>
+                        <input
+                            id="nlEmail"
+                            type="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                        >
+                        <button type="submit" class="btn btn-cream">Subscribe</button>
+                        <p class="form-msg" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </section>
+            <!-- Gallery -->
+            <section class="section gallery" aria-labelledby="galleryTitle">
+                <div class="container">
+                    <header class="section-head reveal">
+                        <p class="kicker">Style notes</p>
+                        <h2 id="galleryTitle">@alnoor.clothing</h2>
+                    </header>
+                    <div class="gallery-grid">
+                        <div
+                            class="g-tile reveal"
+                            style="background-image:url('images/gallery-1.jpg')"
+                            role="img"
+                            aria-label="Styled look in terracotta linen"
+                        ></div>
+                        <div
+                            class="g-tile reveal"
+                            style="background-image:url('images/gallery-2.jpg')"
+                            role="img"
+                            aria-label="Styled look in olive knit"
+                        ></div>
+                        <div
+                            class="g-tile reveal"
+                            style="background-image:url('images/gallery-3.jpg')"
+                            role="img"
+                            aria-label="Styled look in espresso"
+                        ></div>
+                        <div
+                            class="g-tile reveal"
+                            style="background-image:url('images/gallery-4.jpg')"
+                            role="img"
+                            aria-label="Styled look in blush check"
+                        ></div>
+                        <div
+                            class="g-tile reveal"
+                            style="background-image:url('images/gallery-5.jpg')"
+                            role="img"
+                            aria-label="Styled look in gold silk"
+                        ></div>
+                        <div
+                            class="g-tile reveal"
+                            style="background-image:url('images/gallery-6.jpg')"
+                            role="img"
+                            aria-label="Styled look in sage"
+                        ></div>
+                    </div>
+                    <div class="center-action reveal">
+                        <button type="button" class="pill" data-toast="Instagram feed coming soon.">Follow on Instagram
+                            <span aria-hidden="true">↗</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="site-footer" id="contact">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <p class="kicker kicker-light">Stay in touch</p>
+                    <p class="footer-lead">Modern wardrobe essentials, made to last.</p>
+                    <form class="nl-form nl-footer js-newsletter" novalidate>
+                        <label for="footerEmail" class="sr-only">Email address</label>
+                        <input
+                            id="footerEmail"
+                            type="email"
+                            name="email"
+                            placeholder="Your email"
+                            autocomplete="email"
+                            required
+                        >
+                        <button type="submit" class="btn btn-cream btn-sm">Join</button>
+                        <p class="form-msg" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+                <div>
+                    <h4>Shop</h4>
+                    <ul>
+                        <li>
+                            <a href="#new-arrivals">New arrivals</a>
+                        </li>
+                        <li>
+                            <a href="#new-arrivals" data-cat-link="men">Men</a>
+                        </li>
+                        <li>
+                            <a href="#new-arrivals" data-cat-link="women">Women</a>
+                        </li>
+                        <li>
+                            <a href="#collections">Collections</a>
+                        </li>
+                        <li>
+                            <a href="#best-sellers">Best sellers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <ul>
+                        <li>
+                            <button type="button" class="link-like" data-info="shipping">Shipping</button>
+                        </li>
+                        <li>
+                            <button type="button" class="link-like" data-info="returns">Returns &amp; exchanges</button>
+                        </li>
+                        <li>
+                            <button type="button" class="link-like" data-info="size">Size guide</button>
+                        </li>
+                        <li>
+                            <button type="button" class="link-like" data-info="faq">FAQs</button>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="contact-list">
+                        <li>hello@example.com
+                            <small>placeholder</small>
+                        </li>
+                        <li>+92 000 0000000
+                            <small>placeholder</small>
+                        </li>
+                        <li>Your store address, Karachi
+                            <small>placeholder</small>
+                        </li>
+                    </ul>
+                    <div class="socials">
+                        <button type="button" class="link-like" data-toast="Social profiles coming soon.">Instagram</button>
+                        <button type="button" class="link-like" data-toast="Social profiles coming soon.">Facebook</button>
+                        <button type="button" class="link-like" data-toast="Social profiles coming soon.">TikTok</button>
+                    </div>
+                </div>
+            </div>
+            <div class="wordmark" aria-hidden="true">AL NOOR</div>
+            <div class="container footer-bottom">
+                <p>&copy; 2026 AL NOOR CLOTHING. All rights reserved.</p>
+                <p class="credit">Designed &amp; Developed by
+                    <strong>ALFAIZ Web Agency</strong>
+                </p>
+            </div>
+        </footer>
+        <!-- Mobile dock -->
+        <nav class="dock" aria-label="App navigation">
+            <a href="#top" aria-label="Home">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 11l8-6 8 6v8a1 1 0 0 1-1 1h-4v-5h-6v5H5a1 1 0 0 1-1-1z"/>
+                </svg>
+                <span>Home</span>
+            </a>
+            <a href="#categories" aria-label="Categories">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect
+                        x="4"
+                        y="4"
+                        width="6.5"
+                        height="6.5"
+                        rx="1"
+                    />
+                    <rect
+                        x="13.5"
+                        y="4"
+                        width="6.5"
+                        height="6.5"
+                        rx="1"
+                    />
+                    <rect
+                        x="4"
+                        y="13.5"
+                        width="6.5"
+                        height="6.5"
+                        rx="1"
+                    />
+                    <rect
+                        x="13.5"
+                        y="13.5"
+                        width="6.5"
+                        height="6.5"
+                        rx="1"
+                    />
+                </svg>
+                <span>Categories</span>
+            </a>
+            <button type="button" id="bnWish" aria-label="Wishlist">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 20s-7-4.4-8.9-8.6C1.8 8.4 3.6 5 7 5c2 0 3.5 1.1 5 3 1.5-1.9 3-3 5-3 3.4 0 5.2 3.4 3.9 6.4C19 15.6 12 20 12 20z"/>
+                </svg>
+                <span>Wishlist</span>
+                <span class="badge wish-count" hidden>0</span>
+            </button>
+            <button type="button" id="bnAccount" aria-label="Account">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8.5" r="3.8"/>
+                    <path d="M5 20c1.2-3.6 4-5.5 7-5.5s5.8 1.9 7 5.5"/>
+                </svg>
+                <span>Account</span>
+            </button>
+            <button type="button" id="bnBag" aria-label="Bag">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 8h14l-1 12H6L5 8z"/>
+                    <path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+                </svg>
+                <span>Bag</span>
+                <span class="badge bag-count" hidden>0</span>
+            </button>
+        </nav>
+        <div class="overlay" id="overlay" aria-hidden="true"></div>
+        <!-- Mobile menu -->
+        <aside
+            class="drawer drawer-left"
+            id="mobileMenu"
+            aria-label="Site menu"
+            aria-hidden="true"
+        >
+            <div class="drawer-head">
+                <span class="brand-name small">AL NOOR</span>
+                <button
+                    type="button"
+                    class="icon-btn"
+                    data-close-drawer
+                    aria-label="Close menu"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6l12 12M18 6 6 18"/>
+                    </svg>
+                </button>
+            </div>
+            <nav class="drawer-body drawer-nav" aria-label="Mobile">
+                <a href="#top" data-close-drawer>Home</a>
+                <a href="#new-arrivals" data-close-drawer>New arrivals</a>
+                <a href="#new-arrivals" data-cat-link="men">Men</a>
+                <a href="#new-arrivals" data-cat-link="women">Women</a>
+                <a href="#collections" data-close-drawer>Collections</a>
+                <a href="#contact" data-close-drawer>Contact</a>
+            </nav>
+        </aside>
+        <!-- Bag drawer -->
+        <aside
+            class="drawer drawer-right"
+            id="cartDrawer"
+            aria-label="Shopping bag"
+            aria-hidden="true"
+        >
+            <div class="drawer-head">
+                <h2 class="drawer-title">Your bag</h2>
+                <button
+                    type="button"
+                    class="icon-btn"
+                    data-close-drawer
+                    aria-label="Close bag"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6l12 12M18 6 6 18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="drawer-body">
+                <ul class="cart-list" id="cartItems"></ul>
+            </div>
+            <div class="drawer-foot">
+                <div class="totals">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">PKR 0</span>
+                </div>
+                <p class="muted small">Shipping and taxes are calculated at checkout.</p>
+                <button type="button" class="btn btn-ink btn-block" id="checkoutBtn">Checkout (test mode)</button>
+            </div>
+        </aside>
+        <!-- Wishlist drawer -->
+        <aside
+            class="drawer drawer-right"
+            id="wishDrawer"
+            aria-label="Wishlist"
+            aria-hidden="true"
+        >
+            <div class="drawer-head">
+                <h2 class="drawer-title">Your wishlist</h2>
+                <button
+                    type="button"
+                    class="icon-btn"
+                    data-close-drawer
+                    aria-label="Close wishlist"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6l12 12M18 6 6 18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="drawer-body">
+                <ul class="cart-list" id="wishItems"></ul>
+            </div>
+        </aside>
+        <!-- Quick view -->
+        <dialog class="dlg" id="quickView" aria-label="Product quick view">
+            <button
+                type="button"
+                class="dlg-close"
+                data-close-dialog
+                aria-label="Close quick view"
+            >&times;</button>
+            <div id="qvBody"></div>
+        </dialog>
+        <!-- Demo checkout -->
+        <dialog class="dlg dlg-narrow" id="checkoutDialog" aria-labelledby="checkoutTitle">
+            <button
+                type="button"
+                class="dlg-close"
+                data-close-dialog
+                aria-label="Close checkout"
+            >&times;</button>
+            <div class="dlg-pad">
+                <h2 id="checkoutTitle">Checkout</h2>
+                <div id="checkoutBody"></div>
+                <div class="dlg-actions">
+                    <button type="button" class="btn btn-line" data-close-dialog>Back to bag</button>
+                    <button type="button" class="btn btn-ink" id="confirmDemo">Confirm test order</button>
+                </div>
+            </div>
+        </dialog>
+        <!-- Info dialog -->
+        <dialog class="dlg dlg-narrow" id="infoDialog" aria-labelledby="infoTitle">
+            <button
+                type="button"
+                class="dlg-close"
+                data-close-dialog
+                aria-label="Close"
+            >&times;</button>
+            <div class="dlg-pad">
+                <h2 id="infoTitle"></h2>
+                <div id="infoBody" class="info-body"></div>
+            </div>
+        </dialog>
+        <div class="toasts" id="toasts" aria-live="polite"></div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
